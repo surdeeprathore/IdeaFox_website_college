@@ -1,0 +1,85 @@
+.card {
+    width: 200px;
+    height: 300px;
+    /* perspective: 1024px; */
+    margin: 15px;
+    
+}
+.files{
+    display: flex;
+    justify-content:end ;
+}
+
+.files embed{
+    padding: 15px;
+}
+.files p{
+    text-align: center;
+    padding: 15px;
+}
+.card-container{
+    display: flex;
+
+    justify-content: center;
+}
+.card-container .card{
+    border-radius:10%;
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    position: absolute;
+    padding: 8px;
+    text-align: center;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-front {
+    background-image: url(https://img.freepik.com/free-vector/3d-black-techno-abstract-background-overlap-layer_206725-671.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1723593600&semt=ais_hybrid);
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: solid;
+
+    
+}
+
+.card-back {
+    background-color: #e8e8e8;
+    transform: rotateY(180deg);
+}
+
+.btn-more {
+    margin-top: 100px;
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.btn-more:hover {
+    background-color: #e8e8e8;
+    color: #007BFF;
+    border: 1px solid #007BFF;
+}

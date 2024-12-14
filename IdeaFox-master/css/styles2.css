@@ -1,0 +1,55 @@
+.midterm-card {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin: 20px auto;
+}
+
+.midterm-card:hover {
+    transform: translateY(-5px);
+}
+
+.midterm-card h2 {
+    font-size: 22px;
+    color: #fb873f;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.exam_section {
+    display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.exam-info h3 {
+    font-size: 18px;
+    color: #495057;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.exam-info p {
+    font-size: 16px;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: block;
+    background-color: #fb873f;
+    color: #fff;
+    /* padding: 10px 15px; */
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    /* margin-top: 20px; */
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: white;
+}
